@@ -16,6 +16,7 @@
     rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <!-- navigation -->
@@ -35,11 +36,40 @@
         </div>
       </nav>
     <!-- nav end -->
+     <!-- landing page -->
+     <section class="hero" id="home">
+        <main class="content">
+          <h1> <span>Kartu</span> digital</h1>
+          <p>Kami membantumu membuat <span id="typed-text"></span></p>
+          <p> dengan <span id="new-text"></span>.</p>
+         <a href="http://shopee.co.id/safinkarunia" class="cta">Catalog -></a>
+      </main>
+    </section>
 
 <script>
  feather.replace();
 </script>
 <script src="kamuhakari.js"></script>
+<script>
+    const typed = new Typed('#typed-text', {
+    strings: ["undangan", "kartu ucapan", "surat"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    fadeOut: true,
+    loop: true
+}); 
+    const text = new Typed('#new-text', {
+    strings: ["mudah", "murah", "mantap"],
+    typeSpeed: 0,
+    backSpeed: 0,
+    cursorChar: '',
+    shuffle: true,
+    smartBackspace: false,
+    loop: true
+    })
+
+</script>
+</script>
 </body>
 </html>
 >>>>>>> 8a26c85 (initial commit)
