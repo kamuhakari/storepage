@@ -307,6 +307,126 @@ div.gallery {
     color: rgb(75, 71, 71);
   }
 
+  /* contac */
+  .contact{
+    padding: 6rem 7% 1.4rem;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.contact h2 span{
+    color: var(--primary);
+}
+
+.contact p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    /* font-weight: 100; */
+    line-height: 1.6;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgb(75, 71, 71);
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left:2rem ;
+}
+
+.contact .row form .input-group input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+} 
+
+.contact .row form button{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #090000;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+  /* footer */
+  footer {
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a{
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .socials a:hover, footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.2rem;
+}
+
+footer .links a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a{
+    color: var(--primary);
+    font-weight: 700;
+}
+footer .credit p{
+    color: var(--primary);
+    font-weight: 700;
+}
+
+footer .credit a:hover{
+    color: var(--bg);
+    background-color: var(--primary);
+}
+
 
 
 /* about */
