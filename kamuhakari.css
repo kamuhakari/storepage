@@ -227,6 +227,85 @@ body{
 
 }
 
+/* produk */
+.menu{
+    padding: 6rem 7% 1.4rem;
+}
+.menu h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.menu h2 span{
+    color: var(--primary);
+}
+
+.menu p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    /* font-weight: 100; */
+    line-height: 1.6;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  button{
+    margin-top: 10px;
+  }
+
+  button a{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(75, 71, 71);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #faf7f7;
+  }
+  
+
+  button a:hover{
+    background-color: #faf7f7;
+    color: rgb(75, 71, 71);
+  }
 
 
 
@@ -633,20 +712,6 @@ footer .credit a:hover{
 
     .menu p, .contact p{
         font-size: 1.2rem;
-    }
-
-    .menu .theme-container{
-        
-        max-width: 150px;
-    }
-
-    .price, h3, .select-btn{
-        margin-top: -5px;
-    }
-
-    .theme-image{
-        width: 100%;
-        height: 150px;
     }
 
     .contact .row{
