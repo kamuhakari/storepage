@@ -260,52 +260,93 @@ body{
 
 }
 
-div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
+.theme-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.theme-section h2 {
     text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
 
-  button{
-    margin-top: 10px;
-  }
+.theme-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  button a{
-    padding: 10px;
-    font-size: 1rem;
-    background-color: rgb(75, 71, 71);
-    border-radius: 10px;
+.theme-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.theme-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.theme-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.theme-card h3 {
+    padding: 15px 20px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.price {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.discount {
+    color: #ff5722;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.select-btn {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 12px;
+    background: #414342; /* WhatsApp green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-btn:hover {
+    background: #128C7E;
+}
+
+.theme-card a{
     text-decoration: none;
-    color: #faf7f7;
-  }
-  
-
-  button a:hover{
-    background-color: #faf7f7;
-    color: rgb(75, 71, 71);
-  }
+    color: #fff;
+}
 
   /* contac */
   .contact{
@@ -841,6 +882,15 @@ footer .credit a:hover{
 
     .menu p, .contact p{
         font-size: 1.2rem;
+    }
+
+    .price, h3, .select-btn{
+        margin-top: -5px;
+    }
+
+    .theme-image{
+        width: 140px;
+        height: 140px;
     }
 
     .contact .row{

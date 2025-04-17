@@ -51,3 +51,26 @@ const typed = new Typed('#typed-text', {
     smartBackspace: false,
     loop: true
     })
+
+    // script.js
+document.querySelectorAll('.theme-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+        // Ignore clicks on buttons to avoid conflict
+        if (!e.target.classList.contains('select-btn')) {
+            document.querySelectorAll('.theme-card').forEach(c => {
+                c.classList.remove('selected');
+            });
+            card.classList.add('selected');
+        }
+    });
+});
+
+// Handle "Pilih Tema" button clicks
+document.querySelectorAll('.select-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const themeName = btn.closest('.theme-card').dataset.theme;
+        alert(`Anda akan melihat contoh: ${themeName}`);
+        // Add logic to proceed (e.g., redirect to checkout)
+    });
+});
