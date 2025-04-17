@@ -351,21 +351,30 @@ div.gallery {
     text-align: center;
 }
 
-.contact .row form .input-group{
+
+/* .contact .row form .input-group{
     display: flex;
     align-items: center;
     margin-top: 2rem;
     background-color: var(--bg);
     border: 1px solid #eee;
     padding-left:2rem ;
-}
+    color: white;
+} */
 
-.contact .row form .input-group input{
+.contact .row form input, .contact .row form textarea{
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
     background: none;
     color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left:2rem ;
+    color: white;
 } 
 
 .contact .row form button{
