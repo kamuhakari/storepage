@@ -884,13 +884,18 @@ footer .credit a:hover{
         font-size: 1.2rem;
     }
 
+    .menu .theme-container{
+        
+        max-width: 150px;
+    }
+
     .price, h3, .select-btn{
         margin-top: -5px;
     }
 
     .theme-image{
-        width: 140px;
-        height: 140px;
+        width: 100%;
+        height: 150px;
     }
 
     .contact .row{
